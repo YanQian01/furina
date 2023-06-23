@@ -586,7 +586,7 @@ $(document).ready(function () {
 //首次访问网站的时候，立即获取 globalCounts并刷新 (页面加载完成后立即执行)
 document.addEventListener("DOMContentLoaded", function () {
     $.ajax({
-        url: 'https://8.130.126.167:3000/getKleeGlobalcounts',
+        url: 'http://8.130.126.167:3000/getKleeGlobalcounts',
         method: 'GET',
         dataType: 'json',
         data: {
@@ -608,7 +608,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // 定时轮询后端获取 globalCounts
 setInterval(function () {
     $.ajax({
-        url: 'https://8.130.126.167:3000/getKleeGlobalcounts',
+        url: 'http://8.130.126.167:3000/getKleeGlobalcounts',
         method: 'GET',
         dataType: 'json',
         type: 'text',
