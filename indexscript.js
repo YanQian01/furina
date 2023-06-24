@@ -124,10 +124,10 @@ document.addEventListener('click', function (event) {
 //更新日志设置（模板字符串）
 const logTitle = document.getElementById("logtitle");
 const logText = document.getElementById("logtext");
-const title = "6.23 V2.1网站更新日志";
+const title = "6.24 V2.2网站更新日志";
 const content = `
 <br>
-1.本次上线了大家最期待的功能【全球计数器】<br>
+1.新人物【绮良良】的主页登场！绮良良的全球点击计数器也同步上线！<br>
 `;
 
 logTitle.innerHTML = `<h2>${title}</h2>`;
