@@ -548,7 +548,7 @@ document.addEventListener("DOMContentLoaded", function () {
         method: 'GET',
         dataType: 'json',
         headers: {
-            'Ajax-Request': 'true'
+            'ajax-requests': 'true'
         },
         data: {
             thistimecountFromFront: thisTimeCounts, //将前端的 thisTimeCount 传给后端，参数名为 thistimecountFromFront
@@ -572,6 +572,9 @@ setInterval(function () {
         url: 'http://8.130.126.167:3000/getKiraraGlobalcounts',
         method: 'GET',
         dataType: 'json',
+        headers: {
+            'ajax-requests': 'true'
+        },
         type: 'text',
         data: {
             thistimecountFromFront: thisTimeCounts, //将前端的 thisTimeCount 传给后端，参数名为 thistimecountFromFront
