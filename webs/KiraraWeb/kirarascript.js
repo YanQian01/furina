@@ -592,5 +592,5 @@ setInterval(function () {
             console.log(error);
         }
     });
-}, 10000); // 每10s执行一次
+}, 5000); // 每5s执行一次
 

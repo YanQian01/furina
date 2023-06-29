@@ -124,10 +124,12 @@ document.addEventListener('click', function (event) {
 //更新日志设置（模板字符串）
 const logTitle = document.getElementById("logtitle");
 const logText = document.getElementById("logtext");
-const title = "6.24 V2.2网站更新日志";
+const title = "6.27 V3.0网站更新日志";
 const content = `
 <br>
-1.新人物【绮良良】的主页登场！绮良良的全球点击计数器也同步上线！<br>
+1.【多莉】还有【芭芭拉】的主题页面登场！全球计数器同步上线！~<br>
+2.【纳西妲】新增中文语音 “呐呐”，欢迎体验<br>
+3. 优化了其它逻辑<br>
 `;
 
 logTitle.innerHTML = `<h2>${title}</h2>`;

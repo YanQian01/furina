@@ -26,7 +26,7 @@ setInterval(() => {
 // 欢迎页面淡出控制，音乐控制
 var isMusicPlayed = false; // 记录音乐是否已经播放
 var isWelcomed = false; //记录您是否已离开欢迎页面
-var BGM = new Audio("./music/《原神》角色演示-「纳西妲：无垠无忧」 -HOYO-MiX.mp3"); //BGM
+var BGM = new Audio("./music/Babara's song.mp3"); //BGM
 
 document.addEventListener("click", function (event) {
     if (!isWelcomed) {
@@ -36,7 +36,6 @@ document.addEventListener("click", function (event) {
 
 function removeWelcomePageAndPlayMusic() {
     var welcomePage = document.getElementById("welcome-page");
-
     welcomePage.style.opacity = 0;
     setTimeout(function () {
         welcomePage.style.display = "none";
@@ -94,25 +93,19 @@ const LANGUAGES = {
     //中文语音、文本、海报
     "cn": {
         audioList: [
-            //0-8：默认模式 mode1
-            "audio/CN_voice/变聪明啦.mp3",
-            "audio/CN_voice/被打晕了.mp3",
-            "audio/CN_voice/别打啦.mp3",
-            "audio/CN_voice/诶.mp3",
-            "audio/CN_voice/好痛啊.mp3",
-            "audio/CN_voice/呵呵.mp3",
-            "audio/CN_voice/嘿.mp3",
-            "audio/CN_voice/记住你了.mp3",
-            "audio/CN_voice/呐呐.mp3"
+            //0-3：默认模式 mode1
+            "audio/CN_voice/芭芭拉冲呀.mp3",
+            "audio/CN_voice/哒哒哒.mp3",
+            "audio/CN_voice/打起精神来哟.mp3",
+            "audio/CN_voice/哼哼哼哼哼.mp3",
         ],
         texts: {
-            "page-title": "纳西妲 变聪明啦~",
-            "doc-title": "嘿~",
-            "page-descriptions": "给智慧之神纳西妲写的小网站，对，就是那个<del>笨笨的</del>最聪明的《原神》角色！",
-            "counter-descriptions": ["纳西妲已经汲取了~次知识", "纳西妲已经嘿了~次"],
-            "counter-unit": ["啦！"],
-            "counter-button": ["变聪明啦~", "被打晕啦！"],
-            "credits-gif": "鸣谢：Seseren_kr提供的纳西妲GIF图片",
+            "page-title": "芭芭拉闪耀登场~",
+            "doc-title": "Kirakira~",
+            "page-descriptions": "给芭芭拉写的小网站，对，就是那个原神中最闪耀的偶像！",
+            "counter-descriptions": "芭芭拉已经演唱了~",
+            "counter-button": ["演奏~", "哒~哒哒哒哒~哒~哒!"],
+            "credits-gif": "鸣谢：Seseren_kr提供的芭芭拉GIF图片",
             "footer-repository-text": "本网站的Gitee仓库在这儿：",
             "footer-repository-text-2": "原神主题网站代码仓库",
             "footer-repository-text3": "鸣谢：duiqt提供的本网站基础源代码",
@@ -124,25 +117,19 @@ const LANGUAGES = {
     //日文语音、文本、海报
     "ja": {
         audioList: [
-            //0-8：默认模式 mode1
-            "audio/CN_voice/变聪明啦.mp3",
-            "audio/CN_voice/被打晕了.mp3",
-            "audio/CN_voice/别打啦.mp3",
-            "audio/CN_voice/诶.mp3",
-            "audio/CN_voice/好痛啊.mp3",
-            "audio/CN_voice/呵呵.mp3",
-            "audio/CN_voice/嘿.mp3",
-            "audio/CN_voice/记住你了.mp3",
-            "audio/CN_voice/呐呐.mp3"
+            //0-3：默认模式 mode1
+            "audio/CN_voice/芭芭拉冲呀.mp3",
+            "audio/CN_voice/哒哒哒.mp3",
+            "audio/CN_voice/打起精神来哟.mp3",
+            "audio/CN_voice/哼哼哼哼哼.mp3",
         ],
         texts: {
-            "page-title": "ナビーダちゃん～",
-            "doc-title": "へえ~",
-            "page-descriptions": "このサイトは知恵の神ナビーダのために作られた、 あの原神の <del>おっちょこちょいな</del> 賢い天才キャラー。",
-            "counter-descriptions": "ナビーダは既に ~ 次の知識を吸収しました",
-            "counter-unit": "次",
-            "counter-button": "賢くなった!",
-            "credits-gif": "感謝: Seseren_kr さんが提供してくれたナビーダのGIF画像",
+            "page-title": "バーバラキラキラ",
+            "doc-title": "キラキラ",
+            "page-descriptions": "このサイトはバーバラのために作られた、 あの原神の最も輝いているアイドルです",
+            "counter-descriptions": "歌唱回数~",
+            "counter-button": "キラキラー!",
+            "credits-gif": "感謝: Seseren_kr さんが提供してくれたバーバラのGIF画像",
             "footer-repository-text": "こちらはこのページGitee (Mainland China) リポジトリ:",
             "footer-repository-text-2": "原神主题网站代码仓库",
             "footer-repository-text3": "感謝：duiqt さんが提供してくれたこのウェブサイトの基礎ソースコード",
@@ -150,30 +137,22 @@ const LANGUAGES = {
         },
         cardImage: "img/banner_jp.jpg"
     },
-
-
     //英文语音、文本、海报
     "en": {
         audioList: [
-            //0-8：默认模式 mode1
-            "audio/CN_voice/变聪明啦.mp3",
-            "audio/CN_voice/被打晕了.mp3",
-            "audio/CN_voice/别打啦.mp3",
-            "audio/CN_voice/诶.mp3",
-            "audio/CN_voice/好痛啊.mp3",
-            "audio/CN_voice/呵呵.mp3",
-            "audio/CN_voice/嘿.mp3",
-            "audio/CN_voice/记住你了.mp3",
-            "audio/CN_voice/呐呐.mp3"
+            //0-3：默认模式 mode1
+            "audio/CN_voice/芭芭拉冲呀.mp3",
+            "audio/CN_voice/哒哒哒.mp3",
+            "audio/CN_voice/打起精神来哟.mp3",
+            "audio/CN_voice/哼哼哼哼哼.mp3",
         ],
         texts: {
-            "page-title": "Nahida lovely~ &nbsp;",
-            "doc-title": "Hey~",
-            "page-descriptions": "The website for Nahida, the <del>Silly</del> the brightest Genshin Impact character out there.",
-            "counter-descriptions": ["The Knowledge ~ has been absorbed for", "Nahida has been studi~ed for"],
-            "counter-unit": "times",
-            "counter-button": ["Hey~!", "Na na~!"],
-            "credits-gif": "Acknowledgment: GIF images of Nahida provided by Seseren_kr.",
+            "page-title": "Welcome to Babara kirakira~",
+            "doc-title": "Kirakira~",
+            "page-descriptions": "The website for Babara, the shiniest idol in Genshin Impact",
+            "counter-descriptions": "The Babara~ has been performed for",
+            "counter-button": "Kirakira~",
+            "credits-gif": "Acknowledgment: GIF images of Babara provided by Seseren_kr.",
             "footer-repository-text": "You can check out the Gitee repository (Mainland China) here:",
             "footer-repository-text-2": "原神主题网站代码仓库",
             "footer-repository-text3": "Special thanks to duiqt for providing the source code for this website.",
@@ -211,17 +190,17 @@ function refreshModeSelector(selectedLanguage) {
     switch (selectedLanguage) {
         case "cn":
             document.getElementById("mode1").innerHTML = "默认模式";
-            document.getElementById("mode2").innerHTML = "只要呐呐";
+            // document.getElementById("mode2").innerHTML = "只要哒哒哒";
             // document.getElementById("mode3").innerHTML = "隐藏彩蛋";
             break;
         case "ja":
             document.getElementById("mode1").innerHTML = "デフォルトモード";
-            document.getElementById("mode2").innerHTML = "ナナーだけ";
+            // document.getElementById("mode2").innerHTML = "ダダダだけ";
             // document.getElementById("mode3").innerHTML = "ひみつ";
             break;
         case "en":
             document.getElementById("mode1").innerHTML = "DefaultMode";
-            document.getElementById("mode2").innerHTML = "Just Nana";
+            // document.getElementById("mode2").innerHTML = "Just Dadada";
             // document.getElementById("mode3").innerHTML = "Easter egg";
             break;
         default:
@@ -264,7 +243,7 @@ function multiLangMutation() {
                 document.getElementById(textId).innerHTML = value;
     });
     refreshDynamicTexts() //刷新动态文本内容（将新的DOM值渲染到前端）
-    document.getElementById("nahida-card").src = curLang.cardImage; //动态获取nahida-card在当前语言文本环境下的Dom元素并更新
+    document.getElementById("babara-card").src = curLang.cardImage; //动态获取klee-card在当前语言文本环境下的Dom元素并更新
 
     var selectedLanguage = document.getElementById("language-selector").value;
     refreshLanguageSelector(selectedLanguage) //更新语言选择器的文本语言
@@ -304,7 +283,6 @@ let localCount = localStorage.getItem('count-local') || 0; //获取本地点击�
 localCounter.textContent = localCount.toLocaleString('en-US'); //使用美式英语的格式进行格式化。这样可以确保数值以适当的方式显示，例如添加千位分隔符
 
 
-
 let prevTime = 0;
 
 //获取时间戳
@@ -320,8 +298,8 @@ counterButton.addEventListener('click', (e) => {
     localCounter.textContent = localCount.toLocaleString('en-US');
 
     triggerRipple(e); //按钮的水波纹效果
-    playNahida(); //播放纳西妲语音
-    animateNahida(); //播放纳西妲动画
+    playKirakira(); //播放可莉语音
+    animateBabara(); //播放可莉动画
 });
 
 
@@ -354,7 +332,7 @@ function tryCachedObject(origUrl) {
 //缓存所有资源
 function cacheAllResources() {
     // 缓存图片资源
-    for (let i = 1; i < 6; i++) {
+    for (let i = 1; i < 7; i++) {
       const imageUrl = `img/animation/${i}.gif`;
       tryCachedObject(imageUrl);
     }
@@ -397,7 +375,7 @@ function getRandomAudioUrl(curMode) {
 
     //根据模式产生符合模式的音频下标
     if (curMode == "mode1") {
-        randomIndex = Math.floor(Math.random() * 9); //默认语音的文件是：文件下标0-8.这儿的数字就写8.
+        randomIndex = Math.floor(Math.random() * 4); //默认语音的文件是：文件下标0-3.这儿的数字就写4.
     }
     // if (curMode == "mode3") {
     //     randomIndex = Math.floor(Math.random() * 17); //文件下标0-16.这儿的数字就写14. 【这儿写彩蛋对应的audioList下标】
@@ -410,9 +388,9 @@ function getRandomAudioUrl(curMode) {
 
 //播放音频
 var isFirstVoice = true;
-function playNahida() {
+function playKirakira() {
 
-    //先获取当前的模式：1-默认；【2-？ ；3-？】
+    //先获取当前的模式：1-默认；2-只哒哒哒；3-彩蛋
     const modeSelectElement = document.getElementById("mode-selector");
     const modeSelectedOption = modeSelectElement.options[modeSelectElement.selectedIndex];
     const curMode = modeSelectedOption.id;
@@ -424,20 +402,20 @@ function playNahida() {
     switch (curMode) {
         //curMode==mode1   默认模式
         case "mode1": {
-            if (isFirstVoice == true) {//随机获取一个音频的URL，第一个必定是变聪明啦
+            if (isFirstVoice == true) {//随机获取一个音频的URL，第一个必定是哒哒哒哒哒哒
                 isFirstVoice = false;
-                audioUrl = getLocalAudioList()[8]  //第一个固定呐呐 
+                audioUrl = getLocalAudioList()[1] //First play fixed Dadadadadada
             } else {
                 audioUrl = getRandomAudioUrl(curMode);
             }
         }; break;
 
         //curMode==mode2   只哒哒哒
-        case "mode2": {
-            audioUrl = getLocalAudioList()[8]
-        }; break;
+        // case "mode2": {
+        //     audioUrl = getLocalAudioList()[1]
+        // }; break;
 
-        // //cueMode==mode3   彩蛋
+        //cueMode==mode3   彩蛋
         // case "mode3": {
         //     if (isFirstVoice == true) {//随机获取一个音频的URL，第一个必定是哒哒哒
         //         isFirstVoice = false;
@@ -459,15 +437,15 @@ function playNahida() {
     });
 };
 
-//纳西妲的动画
-function animateNahida() {
+
+function animateBabara() {
     let id = null;
 
-    const random = Math.floor(Math.random() * 5) + 1; //1-5，纳西妲的GIF
+    const random = Math.floor(Math.random() * 6) + 1; //1-6，GIF
     const elem = document.createElement("img");
     elem.src = tryCachedObject(`img/animation/${random}.gif`);
 
-    //下面根据不同的窗口改变动画的样式（响应式）
+    //下面根据不同的窗口改变可莉动画的样式（响应式）
     const screenWidth = window.innerWidth;
 
     if (screenWidth > 768) {
@@ -485,7 +463,7 @@ function animateNahida() {
                 clearInterval(id);
                 elem.remove()
             } else {
-                pos += 15;
+                pos += 20;
                 elem.style.right = pos + 'px';
             }
         }, 12);
@@ -552,22 +530,15 @@ var thisTimeCounts = 0; //本次轮询Ajax之前的点击数
 $(document).ready(function () {
     $('#counter-button').click(function () {
         thisTimeCounts++ //本次定时轮询Ajax之前的点击数 +1
-
-        //本地计数器 +1
-        // var localcountElement = document.getElementById("localcounts");
-        // var localCounts = parseInt(localcountElement.textContent);
-        // localCounts++;
-        // localcountElement.textContent = localCounts;
     });
 });
-
 
 
 
 //首次访问网站的时候，立即获取 globalCounts并刷新 (页面加载完成后立即执行)
 document.addEventListener("DOMContentLoaded", function () {
     $.ajax({
-        url: 'http://8.130.126.167:3000/getNahidaGlobalcounts',
+        url: 'http://8.130.126.167:3000/getBabaraGlobalcounts',
         method: 'GET',
         dataType: 'json',
         headers: {
@@ -580,7 +551,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("初始化成功，globalcountsFromBackend = " + response.globalcountsFromBackend)
 
             var globalCountElement = document.getElementById("global-counter");
-            globalCountElement.textContent = (response.globalcountsFromBackend).toLocaleString('en-US');
+            globalCountElement.textContent = (response.globalcountsFromBackend).toLocaleString('en-US')
         },
         error: function (error) {
             console.log(error);
@@ -592,7 +563,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // 定时轮询后端获取 globalCounts
 setInterval(function () {
     $.ajax({
-        url: 'http://8.130.126.167:3000/getNahidaGlobalcounts',
+        url: 'http://8.130.126.167:3000/getBabaraGlobalcounts',
         method: 'GET',
         dataType: 'json',
         headers: {
@@ -608,7 +579,7 @@ setInterval(function () {
             thisTimeCounts = 0; //将前端本地点击数清零
 
             var globalCountElement = document.getElementById("global-counter"); //获取全球计数器DOM
-            globalCountElement.textContent = (response.globalcountsFromBackend).toLocaleString('en-US');  //更新全球计数器的值
+            globalCountElement.textContent = (response.globalcountsFromBackend).toLocaleString('en-US')  //更新全球计数器的值
 
         },
         error: function (error) {
